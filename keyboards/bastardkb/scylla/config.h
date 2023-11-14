@@ -23,6 +23,15 @@
 #define RGBLED_SPLIT \
     { 29, 29 }
 
+// pulled from Miryoku
+#undef TAPPING_TERM
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define QUICK_TAP_TERM 0
+
 /* RGB matrix support. */
 #ifdef RGB_MATRIX_ENABLE
 #    define SPLIT_TRANSPORT_MIRROR

@@ -22,4 +22,8 @@ RGB_MATRIX_ENABLE = yes     # Enable keyboard RGB matrix functionality
 
 SPLIT_KEYBOARD = yes
 
+# pulled from Miryoku
+EXTRAKEY_ENABLE = yes
+CAPS_WORD_ENABLE = yes
+
 SERIAL_DRIVER = vendor
