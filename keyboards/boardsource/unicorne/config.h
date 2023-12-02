@@ -18,9 +18,22 @@
 #define AUDIO_PWM_DRIVER PWMD6
 #define AUDIO_INIT_DELAY
 #define AUDIO_PWM_CHANNEL RP2040_PWM_CHANNEL_A
-#define STARTUP_SONG SONG(ODE_TO_JOY)
+#define STARTUP_SONG SONG(STARTUP_SOUND)
 
 #define ANALOG_JOYSTICK_Y_AXIS_PIN GP26
 #define ANALOG_JOYSTICK_X_AXIS_PIN GP27
 #define POINTING_DEVICE_INVERT_Y
 #define POINTING_DEVICE_INVERT_X
+
+// pulled from Miryoku
+#undef TAPPING_TERM
+#define TAPPING_TERM 200
+#define TAPPING_TERM_PER_KEY
+#define PERMISSIVE_HOLD
+
+// Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
+#define QUICK_TAP_TERM 0
+
+#define COMBO_TERM 25
+#define COMBO_MUST_HOLD_MODS
+#define COMBO_HOLD_TERM 175
